@@ -60,7 +60,7 @@ css = '''
 markdown(css, unsafe_allow_html=True)
 
 # 数据库连接
-conn = sqlite3.connect('C:/Users/21125/PycharmProjects/PythonProject4/test.db')
+conn = sqlite3.connect('test.db')
 conn.execute('PRAGMA foreign_keys = ON')
 tname="Title"
 conn.execute(f'''
@@ -408,4 +408,5 @@ with container():
     markdown("© 2024 个人信息管理系统 | 保持您的重要信息有序管理")
 
 # 关闭数据库连接
+
 conn.close()
